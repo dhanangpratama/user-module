@@ -1,0 +1,41 @@
+{
+    "name": "dhanangpratama/user-module",
+    "type": "laravel-module",
+    "description": "User module for laravel modules. Build on top of https://github.com/nWidart/laravel-modules",
+    "keywords": [
+        "module",
+        "laravel-module",
+        "laravel"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/dhanangpratama/user-module/issues",
+        "source": "https://github.com/dhanangpratama/user-module"
+    },
+    "authors": [
+        {
+            "name": "Dhanang Pratama",
+            "email": "dhanangpratama@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\User\\Providers\\UserServiceProvider"
+            ],
+            "aliases": {
+                "UserEntity": "Modules\\User\\Entities\\UserEntity"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\User\\": ""
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
